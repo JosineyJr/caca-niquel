@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Caça Níquel</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12">
+            <h3>Caça Níquel</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4"></div>
+          <div class="col-4">
+            <label for="creditos">Créditos:</label>
+            <input type="text" name="creditos" id="creditos" readonly value="10"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4"></div>
+          <div class="col-4">
+            <label for="aposta">Aposta:</label>
+            <input type="number" min="1" value="1" name="aposta" id="aposta"/>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-2 casa">
+            <img src="7.png" alt="" />
+          </div>
+          <div class="col-2 casa">
+            <img src="7.png" alt="" />
+          </div>
+          <div class="col-2 casa">
+            <img src="7.png" alt="" />
+          </div>
+          <div class="col-2 casa">
+            <img src="7.png" alt="" />
+          </div>
+          <div class="col-2 casa">
+            <img src="7.png" alt="" />
+          </div>
+          <div class="col-2 casa">
+            <img src="7.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="container d-flex justify-content-center">
+        <div class="row">
+          <div class="col-4">
+            <button class="btn btn-secondary" id="apostarMenos">
+              Apostar <span class="text-danger">-</span>
+            </button>
+          </div>
+          <div class="col-4">
+            <button class="btn btn-secondary" id="jogar">Jogar</button>
+          </div>
+          <div class="col-4">
+            <button class="btn btn-secondary" id="apostarMais">
+              Apostar <span class="text-danger">+</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
